@@ -20,7 +20,7 @@ blockCount = 32
 for row in range(5):
 	for i in range(0, blockCount):
 		print([205-(i*4), 0, 115+(i*2)])
-		color = [205-(i*4), 0, 115+(i*2)]
+		color = [205-(i*4)+(row * 3), 0, 115+(i*2)]
 		curBlock = Block(i * (47 + 3), 100 + row * 21, color)
 		blocks.append(curBlock)
 
